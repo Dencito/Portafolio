@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  z-index: 6; }
+  .contenedor .logo {
+    width: auto;
+    height: auto; }
+    .contenedor .logo a {
+      position: relative;
+      width: 100%;
+      height: auto; }
+      .contenedor .logo a img {
+        display: block;
+        margin: 10px auto 0 auto;
+        width: 130px; }
+  .contenedor .menu {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    width: 100%;
+    background-color: #fff;
+    margin: 15px auto;
+    position: sticky;
+    top: 3px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    z-index: 5; }
+    .contenedor .menu ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto; }
+      .contenedor .menu ul li {
+        margin: 0 10px; }
+        .contenedor .menu ul li a {
+          font-size: 30px;
+          text-decoration: none;
+          color: #000;
+          font-weight: 400; }
+          .contenedor .menu ul li a:hover {
+            text-decoration: underline 2px; }
+    .contenedor .menu input, .contenedor .menu label {
+      display: none; }
+  .contenedor #principal {
+    background-image: url(../img/fondos/fondo-nuevo-inicio.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh; }
+    .contenedor #principal .contenidoInicio {
+      width: 100%;
+      height: auto;
+      position: sticky;
+      top: 50%; }
+      .contenedor #principal .contenidoInicio .nombres {
+        font-size: 65px;
+        font-weight: 900; }
+        .contenedor #principal .contenidoInicio .nombres span {
+          color: #F5DF4E; }
+      .contenedor #principal .contenidoInicio .oficio {
+        font-size: 35px;
+        font-weight: 900; }
+        .contenedor #principal .contenidoInicio .oficio span {
+          color: #F5DF4E; }
+      .contenedor #principal .contenidoInicio .title {
+        text-align: center;
+        color: #fff;
+        position: relative; }
+
+h1 {
+  font-size: 12vw;
+  font-weight: 600;
+  color: #2e2c2c; }
+
+.contenedor #sobreMi {
+  width: 100%;
+  height: auto;
+  max-height: 2000px;
+  background-image: url(../img/fondos/fondoSobreMiNuevo.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .contenedor #sobreMi .contenidoSobreMi {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .contenedor #sobreMi .contenidoSobreMi .imgMia {
+      width: 400px;
+      height: auto;
+      margin: auto; }
+      .contenedor #sobreMi .contenidoSobreMi .imgMia img {
+        width: 100%;
+        max-width: 300px;
+        min-width: none;
+        height: 100%;
+        display: block;
+        margin: 150px auto; }
+    .contenedor #sobreMi .contenidoSobreMi .infoMia {
+      width: 30%;
+      min-width: 60vw;
+      max-width: 100vw;
+      height: auto;
+      margin: auto; }
+      .contenedor #sobreMi .contenidoSobreMi .infoMia p {
+        font-size: 35px;
+        color: #fff;
+        padding: 10px; }
+        .contenedor #sobreMi .contenidoSobreMi .infoMia p span {
+          color: #F5DF4E; }
+
+.contenedor #proyectos {
+  width: 100%;
+  height: auto;
+  margin: auto; }
+  .contenedor #proyectos .titleProyectos {
+    font-size: 65px;
+    font-weight: 500;
+    text-align: center; }
+  .contenedor #proyectos .proyectos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto; }
+    .contenedor #proyectos .proyectos .proyecto {
+      display: flex;
+      flex-direction: column;
+      height: auto; }
+      .contenedor #proyectos .proyectos .proyecto img {
+        width: 90%;
+        border-radius: 30px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        margin: 20px auto 10px auto; }
+      .contenedor #proyectos .proyectos .proyecto a {
+        width: 120px;
+        text-decoration: none;
+        font-size: 28px;
+        font-weight: 400;
+        color: #fff;
+        object-fit: cover;
+        background-color: #F5DF4E;
+        text-align: center;
+        margin: 5px auto 20px auto;
+        border: 1px solid #000;
+        border-radius: 10px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
+        .contenedor #proyectos .proyectos .proyecto a:hover {
+          animation: animacion 1s ease-out; }
+
+.contenedor #habilidades {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .contenedor #habilidades h1 {
+    font-size: 65px;
+    font-weight: 500;
+    text-align: center;
+    margin: 60px o; }
+  .contenedor #habilidades .contenedorHabilidades {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto; }
+    .contenedor #habilidades .contenedorHabilidades .habilidad {
+      position: relative; }
+      .contenedor #habilidades .contenedorHabilidades .habilidad img {
+        display: block;
+        width: 90%;
+        margin: auto;
+        object-fit: cover; }
+      .contenedor #habilidades .contenedorHabilidades .habilidad h2 {
+        font-size: 35px;
+        color: #fff;
+        position: absolute;
+        top: 27%;
+        left: 30%; }
+    .contenedor #habilidades .contenedorHabilidades .css h2 {
+      left: 35%; }
+    .contenedor #habilidades .contenedorHabilidades .js h2 {
+      left: 40%; }
+    .contenedor #habilidades .contenedorHabilidades .python h2 {
+      left: 20%; }
+    .contenedor #habilidades .contenedorHabilidades .cMM h2 {
+      left: 35%; }
+    .contenedor #habilidades .contenedorHabilidades .c h2 {
+      left: 38%; }
+  .contenedor #habilidades a {
+    width: 25%;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20% auto 10% auto;
+    background-color: #F5DF4E;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2vw;
+    color: #fff;
+    font-weight: 800; }
+    .contenedor #habilidades a:hover {
+      animation: animacion 1s ease-out; }
+
+.contenedor #contacto {
+  width: 80%;
+  height: auto;
+  margin: 5% auto 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .contenedor #contacto h1 {
+    font-size: 65px;
+    font-weight: 500;
+    text-align: center; }
+  .contenedor #contacto .contact {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+    margin: auto; }
+    .contenedor #contacto .contact .contactame {
+      margin: auto;
+      width: 40%;
+      height: auto; }
+      .contenedor #contacto .contact .contactame h2 {
+        width: 100%;
+        text-align: left;
+        font-size: 30px;
+        font-weight: 400; }
+      .contenedor #contacto .contact .contactame p {
+        width: 100%;
+        font-size: 19px;
+        font-weight: 400;
+        text-align: left; }
+    .contenedor #contacto .contact .formulario {
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-direction: column; }
+      .contenedor #contacto .contact .formulario .datos {
+        margin: auto;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+        .contenedor #contacto .contact .formulario .datos .nombre, .contenedor #contacto .contact .formulario .datos .apellido, .contenedor #contacto .contact .formulario .datos .email, .contenedor #contacto .contact .formulario .datos .telefono {
+          display: flex;
+          flex-direction: column;
+          width: auto;
+          margin: 20px 10px; }
+          .contenedor #contacto .contact .formulario .datos .nombre label, .contenedor #contacto .contact .formulario .datos .apellido label, .contenedor #contacto .contact .formulario .datos .email label, .contenedor #contacto .contact .formulario .datos .telefono label {
+            font-size: 20px;
+            font-weight: 500; }
+          .contenedor #contacto .contact .formulario .datos .nombre input, .contenedor #contacto .contact .formulario .datos .apellido input, .contenedor #contacto .contact .formulario .datos .email input, .contenedor #contacto .contact .formulario .datos .telefono input {
+            margin: 7px 0;
+            border: none;
+            border-bottom: 2px solid #000;
+            display: inline-block;
+            margin: auto;
+            font-size: 17px;
+            padding: 5px;
+            font-weight: 300; }
+            .contenedor #contacto .contact .formulario .datos .nombre input:focus, .contenedor #contacto .contact .formulario .datos .apellido input:focus, .contenedor #contacto .contact .formulario .datos .email input:focus, .contenedor #contacto .contact .formulario .datos .telefono input:focus {
+              outline: none;
+              border-bottom: 2px solid #ccc;
+              box-shadow: 0px 11px 10px -3px rgba(0, 0, 0, 0.5); }
+      .contenedor #contacto .contact .formulario .botones {
+        width: 200px;
+        margin: auto;
+        display: flex; }
+        .contenedor #contacto .contact .formulario .botones input {
+          width: auto;
+          text-decoration: none;
+          font-size: 25px;
+          font-weight: 600;
+          color: #fff;
+          text-align: center;
+          object-fit: cover;
+          background-color: #F5DF4E;
+          border: 1px solid #000;
+          border-radius: 10px;
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          cursor: pointer; }
+          .contenedor #contacto .contact .formulario .botones input:hover {
+            animation: animacion 1s ease-out; }
+@keyframes animacion {
+  0% {
+    background-color: #f5df4e8e; }
+  25% {
+    background-color: #f5df4ec0; }
+  50% {
+    background-color: #f5df4ebe; }
+  70% {
+    background-color: #f5df4ede; }
+  100% {
+    background-color: #f5df4e; } }
+          .contenedor #contacto .contact .formulario .botones input[type="submit"] {
+            margin: 20px 10px 0 0; }
+          .contenedor #contacto .contact .formulario .botones input[type="reset"] {
+            margin-top: 20px; }
+  .contenedor #contacto .rrss {
+    width: 90%;
+    height: auto;
+    margin: 20% auto 20px auto;
+    text-align: center; }
+    .contenedor #contacto .rrss a {
+      color: #000;
+      background-color: #fff;
+      font-size: 50px;
+      text-align: center;
+      border-radius: 10%; }
+      .contenedor #contacto .rrss a:hover:first-child {
+        color: #fff;
+        background-color: #3b5998;
+        transition: 0.6s; }
+      .contenedor #contacto .rrss a:hover:nth-child(2) {
+        color: #fff;
+        background-color: #007bb5;
+        transition: 0.6s; }
+      .contenedor #contacto .rrss a:hover:nth-child(3) {
+        color: #fff;
+        background-color: #125688;
+        transition: 0.6s; }
+      .contenedor #contacto .rrss a:hover:nth-child(4) {
+        color: #fff;
+        background-color: #4dc247;
+        transition: 0.6s; }
+      .contenedor #contacto .rrss a:hover:nth-child(5) {
+        color: #fff;
+        background-color: #0088cc;
+        transition: 0.6s; }
+      .contenedor #contacto .rrss a:hover:nth-child(6) {
+        color: #fff;
+        background-color: #55acee;
+        transition: 0.6s; }
+      .contenedor #contacto .rrss a i {
+        width: 70px;
+        height: 50px; }
+
+.contenedor #footer {
+  width: 100%;
+  background-color: #f5df4eb2; }
+  .contenedor #footer p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px; }
+
+@media screen and (max-width: 850px) {
+  .contenedor .menu ul {
+    display: none; }
+    .contenedor .menu ul li a {
+      font-size: 8vw;
+      font-weight: 600; }
+  .contenedor .menu label {
+    font-size: 40px;
+    margin: 5px 20px;
+    display: block; }
+  .contenedor .menu input:checked ~ ul {
+    list-style: none;
+    display: block;
+    margin: 0 auto; }
+  .contenedor #principal .contenidoInicio .nombres {
+    font-size: 10vw; }
+  .contenedor #principal .contenidoInicio .oficio {
+    font-size: 4vw; }
+  .contenedor #sobreMi .contenidoSobreMi .infoMia {
+    width: 90%;
+    min-width: none;
+    max-width: none; }
+    .contenedor #sobreMi .contenidoSobreMi .infoMia p {
+      font-size: 4vw; }
+  .contenedor #proyectos .titleProyectos {
+    font-size: 9vw; }
+  .contenedor #habilidades h1 {
+    font-size: 9vw; }
+  .contenedor #habilidades a {
+    font-size: 4vw;
+    width: 50%; }
+  .contenedor #contacto {
+    width: 100%; }
+    .contenedor #contacto h1 {
+      font-size: 9vw; }
+    .contenedor #contacto .contact {
+      margin: 0; }
+      .contenedor #contacto .contact .contactame {
+        margin: auto; }
+        .contenedor #contacto .contact .contactame h2 {
+          font-size: 5vw; }
+      .contenedor #contacto .contact .formulario {
+        width: 90%;
+        margin: auto; }
+        .contenedor #contacto .contact .formulario .datos {
+          margin: auto; }
+          .contenedor #contacto .contact .formulario .datos div {
+            width: 100%; } }
+@media screen and (max-width: 450px) {
+  .contenedor #habilidades .contenedorHabilidades .habilidad img {
+    width: 70%; }
+  .contenedor #contacto h1 {
+    font-size: 12vw; }
+  .contenedor #contacto .contact .contactame {
+    width: 90%; }
+    .contenedor #contacto .contact .contactame h2 {
+      font-size: 8vw; }
+    .contenedor #contacto .contact .contactame p {
+      font-size: 5vw; }
+    .contenedor #contacto .contact .contactame .formulario {
+      width: 90%;
+      margin: auto; }
+      .contenedor #contacto .contact .contactame .formulario .datos {
+        margin: 0; }
+        .contenedor #contacto .contact .contactame .formulario .datos div {
+          width: 100%; } }
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif; }
+
+/*# sourceMappingURL=style.css.map */

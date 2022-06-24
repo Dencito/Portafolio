@@ -1,0 +1,89 @@
+$coloPrimario: #F5DF4E 
+$sizeTitulos: 65px
+$sizeSubtitulos: 35px
+.contenedor
+    display: flex
+    flex-direction: column
+    background-color: #fff
+    width: 100%
+    height: auto
+    z-index: 6
+    .logo 
+        width: auto
+        height: auto
+        a
+            position: relative
+            width: 100%
+            height: auto
+            img
+                display: block
+                margin:  10px auto 0 auto
+                width: 130px
+
+
+    .menu
+        border-top: 2px solid #000 
+        border-bottom: 2px solid #000
+        width: 100%
+        background-color: #fff
+        margin: 15px auto
+        position: sticky
+        top: 3px
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
+        z-index: 5
+        ul
+            list-style: none
+            display: flex
+            justify-content: space-around
+            margin: 0 auto
+            li
+                margin: 0 10px
+                a
+                    font-size: 30px
+                    text-decoration: none
+                    color: #000
+                    font-weight: 400
+                    &:hover
+                        text-decoration: underline 2px
+        input ,label
+            display: none
+    
+    #principal
+        background-image: url(../img/fondos/fondo-nuevo-inicio.png)
+        object-fit: cover
+        background-repeat: no-repeat
+        background-size: cover
+        width: 100%
+        height: 100vh
+        .contenidoInicio
+            width: 100%
+            height: auto
+            position: sticky
+            top: 50%
+            .nombres
+                font-size: $sizeTitulos
+                font-weight: 900
+                span
+                    color: $coloPrimario
+            .oficio
+                font-size: $sizeSubtitulos
+                font-weight: 900
+                span
+                    color: $coloPrimario
+            .title
+                text-align: center
+                color: #fff
+                position: relative
+            
+@mixin titulo($font-size, $font-weight, $color)
+    font-size: $font-size
+    font-weight: $font-weight
+    color: $color
+h1
+    @include titulo(12vw, 600, #2e2c2c)
+        
+
+
+            
+    
+    

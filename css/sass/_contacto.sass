@@ -1,0 +1,142 @@
+.contenedor
+    #contacto
+        width: 80%
+        height: auto
+        margin: 5% auto 0 auto
+        box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25))
+        h1
+            font-size: $sizeTitulos
+            font-weight: 500
+            text-align: center
+        .contact
+            display: flex
+            flex-wrap: wrap
+            width: 80%
+            height: auto
+            margin: auto
+            .contactame
+                margin: auto
+                width: 40%
+                height: auto
+                h2
+                    width: 100%
+                    text-align: left
+                    font-size: 30px
+                    font-weight: 400
+                p
+                    width: 100%
+                    font-size: 19px
+                    font-weight: 400
+                    text-align: left
+            .formulario
+                width: auto
+                height: auto
+                display: flex
+                flex-direction: column
+                .datos
+                    margin: auto
+                    width: 100%
+                    height: auto
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: center
+                    .nombre , .apellido, .email, .telefono
+                        display: flex
+                        flex-direction: column
+                        width: auto
+                        margin: 20px 10px
+                        label
+                            font-size: 20px
+                            font-weight: 500
+                        input
+                            margin: 7px 0
+                            border: none
+                            border-bottom: 2px solid #000
+                            display: inline-block
+                            margin: auto
+                            font-size: 17px
+                            padding: 5px
+                            font-weight: 300
+                            &:focus
+                                outline: none
+                                border-bottom: 2px solid #ccc
+                                box-shadow: 0px 11px 10px -3px rgba(0,0,0,0.5)
+                .botones
+                    width: 200px
+                    margin: auto
+                    display: flex
+                    input
+                        width: auto
+                        text-decoration: none
+                        font-size: 25px
+                        font-weight: 600
+                        color: #fff
+                        text-align: center
+                        object-fit: cover
+                        background-color: $coloPrimario
+                        border: 1px solid #000
+                        border-radius: 10px
+                        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+                        cursor: pointer
+                        &:hover
+                            @keyframes animacion 
+                                0%
+                                    background-color: #f5df4e8e 
+                                25%
+                                    background-color: #f5df4ec0 
+                                50%
+                                    background-color: #f5df4ebe
+                                70%
+                                    background-color: #f5df4ede
+                                100%
+                                    background-color: #f5df4e 
+                            animation: animacion 1s ease-out
+                                
+                            
+                        &[type="submit"]
+                            margin: 20px 10px 0 0
+                        &[type="reset"]
+                            margin-top: 20px
+
+
+        .rrss
+            width: 90%
+            height: auto
+            margin: 20% auto 20px auto
+            text-align: center
+            a
+                color: #000
+                background-color: #fff
+                font-size: 50px
+                text-align: center
+                border-radius: 10%
+                &:hover  
+                    &:first-child
+                        color: #fff
+                        background-color: #3b5998
+                        transition: .6s
+                    &:nth-child(2)
+                        color: #fff
+                        background-color: #007bb5
+                        transition: .6s
+                    &:nth-child(3)
+                        color: #fff
+                        background-color: #125688
+                        transition: .6s
+                    &:nth-child(4)
+                        color: #fff
+                        background-color: #4dc247
+                        transition: .6s
+                    &:nth-child(5)
+                        color: #fff
+                        background-color: #0088cc
+                        transition: .6s
+                    &:nth-child(6)
+                        color: #fff
+                        background-color: #55acee
+                        transition: .6s
+                        
+                i
+                    width: 70px
+                    height: 50px
+                    
