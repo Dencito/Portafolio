@@ -259,8 +259,6 @@ h1 {
             margin: 7px 0;
             border: none;
             border-bottom: 2px solid #000;
-            display: inline-block;
-            margin: auto;
             font-size: 17px;
             padding: 5px;
             font-weight: 300; }
@@ -398,6 +396,8 @@ h1 {
           .contenedor #contacto .contact .formulario .datos div {
             width: 100%; } }
 @media screen and (max-width: 450px) {
+  .contenedor #sobreMi .contenidoSobreMi .imgMia {
+    width: 80vw; }
   .contenedor #habilidades .contenedorHabilidades .habilidad img {
     width: 70%; }
   .contenedor #contacto h1 {
@@ -408,13 +408,12 @@ h1 {
       font-size: 8vw; }
     .contenedor #contacto .contact .contactame p {
       font-size: 5vw; }
-    .contenedor #contacto .contact .contactame .formulario {
-      width: 90%;
-      margin: auto; }
-      .contenedor #contacto .contact .contactame .formulario .datos {
-        margin: 0; }
-        .contenedor #contacto .contact .contactame .formulario .datos div {
-          width: 100%; } }
+  .contenedor #contacto .contact .formulario {
+    width: 90%;
+    margin: auto; }
+    .contenedor #contacto .contact .formulario .datos {
+      position: relative;
+      left: 10%; } }
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
