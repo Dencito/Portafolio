@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+.text-amarillo {
+  color: #F5DF4E; }
+
+.bg-contenido {
+  background-color: #131313; }
+
+.inicio {
+  background-image: url("../imgs/BgInicio.jpg"); }
+
+.hover-img:hover {
+  transform: scale(1.05);
+  transition: .6s;
+  cursor: pointer; }
+
+.menu #navHamburger {
+  display: none; }
+.menu .labelNav {
+  display: none;
+  width: 30px;
+  height: 30px;
+  margin: 5px; }
+  .menu .labelNav .lines {
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    margin: 3px 0; }
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px; }
+  .menu ul li {
+    margin: auto 20px; }
+    .menu ul li a {
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #fff;
+      text-decoration: none;
+      background-image: linear-gradient(currentColor, currentColor);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size .4s; }
+      .menu ul li a:hover, .menu ul li a:focus {
+        background-size: 100% 2px; }
+
+#inicio {
+  background-color: #000;
+  height: 100vh;
+  width: auto; }
+  #inicio .containerInicio {
+    width: 100%;
+    height: auto; }
+    #inicio .containerInicio .contenidoInicio {
+      margin: 25vh 0 20px 0; }
+  #inicio .contactame {
+    width: 100%; }
+    #inicio .contactame div a img {
+      width: 50px; }
+      #inicio .contactame div a img:hover {
+        transform: scale(1.15);
+        transition: .6s; }
+
+@media screen and (max-width: 890px) {
+  .inicioHeader .menu {
+    padding: 0 0 11px 0; }
+  @keyframes aparecerMenu {
+    0% {
+      transform: translate(0, -100px); }
+    100% {
+      transform: translate(0, 0px); } }
+    .inicioHeader .menu ul {
+      padding-left: 20px;
+      animation: aparecerMenu 1.2s ease;
+      display: none; }
+    .inicioHeader .menu #navHamburger:checked ~ .labelNav {
+      position: relative;
+      transform: translate(0, 10px); }
+      .inicioHeader .menu #navHamburger:checked ~ .labelNav .line2 {
+        display: none; }
+      .inicioHeader .menu #navHamburger:checked ~ .labelNav .line1 {
+        background-color: #fff;
+        transform: rotate(45deg);
+        position: absolute; }
+      .inicioHeader .menu #navHamburger:checked ~ .labelNav .line3 {
+        background-color: #fff;
+        transform: rotate(-45deg);
+        position: absolute; }
+    .inicioHeader .menu #navHamburger:checked ~ ul {
+      width: 100%;
+      display: block; }
+    .inicioHeader .menu .labelNav {
+      padding: 8px 0 0 0;
+      margin-left: 10px;
+      display: block; } }
+
+/*# sourceMappingURL=style.css.map */
