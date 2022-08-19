@@ -22,6 +22,10 @@ html {
 .inicio {
     background-image: url('../imgs/BgInicio.jpg');
 }
+
+.h-size {
+    height: 100vh;
+}
 .hover-img{
     &:hover {
         transform: scale(1.05);
