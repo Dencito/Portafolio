@@ -45,6 +45,23 @@ background: transparent; }
 canvas {
   width: 100%;
   height: 100vh;
+  left: 0;
+  animation: box-shadow-canvas linear infinite 3s;
+  transition: all 1s;
+}
+@keyframes box-shadow-canvas {
+  0%{
+    box-shadow: #f7365083 7px 15px 30px;
+    transition: all 1s;
+  }
+  50% {
+    box-shadow: #f73650 7px 15px 60px;
+    transition: all 1s;
+  }
+  100% {
+    box-shadow: #f7365083 7px 15px 30px;
+    transition: all 1s;
+  }
 }
 
 .h-size {
